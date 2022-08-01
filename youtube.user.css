@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        1.0
+@version        1.1
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -2417,6 +2417,11 @@
     ytd-browse #page-manager #header #hashtag-info-text{
         color: #e1dbdb;
         font-style: italic;
+    }
+    
+    ytd-browse #header #hashtag.ytd-hashtag-header-renderer {
+        font-family: "Montserrat" !important;
+        font-weight: bold !important;
     }
     
     #info.ytd-video-primary-info-renderer {
