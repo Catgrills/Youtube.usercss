@@ -7,7 +7,7 @@
 
 About
 -------------------------------
-<p>A css script for <i><a href="https://youtube.com/">Youtube.com</a></i>.</p>
+<p>A css script for <i><a href="https://youtube.com/">Youtube</a></i>.</p>
 <p>There are two themes available : <i>Classic</i> and <i>Dark Cyan</i>.</p>
 
 Instruction
