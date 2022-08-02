@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        1.2
+@version        1.3
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -649,8 +649,8 @@
     }
     
     ytd-rich-grid-media[mini-mode] h3.ytd-rich-grid-media {
-        /*** HOME VIDEO THUMNAIL MIX ***/
-        width: 300px !important;
+        /*** HOME VIDEO THUMBNAIL MIX ***/
+        width: 40vw !important;
         margin: 12px 20px 5px 0px !important;
     }
     
