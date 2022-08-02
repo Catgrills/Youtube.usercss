@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        1.5
+@version        1.6
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -1895,6 +1895,26 @@
     
     #filter-menu.ytd-search-sub-menu-renderer *:hover {
         color: var(--secondary-color);
+    }
+	
+    yt-search-query-correction {
+        /*** SEARCH AUTOCORRECT ***/
+        margin-top: 5px;
+    }
+    
+    yt-search-query-correction, 
+    yt-search-query-correction * {
+        color: var(--primary-color) !important;
+        font-size: 11pt !important;
+    } 
+    
+    .yt-simple-endpoint.yt-search-query-correction * {
+        color: #218c74 !important;
+        font-weight: bold !important;
+    }
+    
+    .yt-simple-endpoint.yt-search-query-correction:hover * {
+        color: #156856 !important;
     }
     
     .ytd-search ytd-shelf-renderer.ytd-item-section-renderer {
