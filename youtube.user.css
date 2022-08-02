@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        1.6
+@version        1.7
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -2392,7 +2392,7 @@
     
     #primary #container .title .style-scope.ytd-video-primary-info-renderer:hover {
         max-width: 100% !important;
-        overflow: visible;
+        overflow: visible !important;
         white-space: break-spaces !important;
     }
     
