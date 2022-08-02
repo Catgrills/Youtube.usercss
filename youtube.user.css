@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        1.3
+@version        1.4
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -2909,6 +2909,56 @@
         color: var(--secondary-color) !important;
         font-style: italic !important;
     }
+	
+    #secondary yt-related-chip-cloud-renderer {
+        /*** WATCH SIDEBAR TAGS ***/
+        width: 250px !important;
+        margin-top: 20px;
+        margin-bottom: -20px;
+    }   
+    
+    .yt-related-chip-cloud-renderer #left-arrow-button.yt-chip-cloud-renderer, 
+    .yt-related-chip-cloud-renderer #right-arrow-button.yt-chip-cloud-renderer {
+        height: 40px !important;
+        width: 40px !important;
+        margin-top: 4px;
+    }
+    
+    .yt-related-chip-cloud-renderer #left-arrow-button.yt-chip-cloud-renderer{
+        background:  linear-gradient(to right,var(--body-bg) 20%,rgba(255,255,255,0) 80%) !important;
+    }
+    
+    .yt-related-chip-cloud-renderer #right-arrow-button.yt-chip-cloud-renderer {
+        background: linear-gradient(to left,var(--body-bg) 20%,rgba(255,255,255,0) 80%);
+    }
+    
+    .yt-related-chip-cloud-renderer #left-arrow::after,
+    .yt-related-chip-cloud-renderer #right-arrow::before {
+        background: transparent !important;
+    }
+    
+    .yt-related-chip-cloud-renderer #left-arrow ytd-button-renderer {
+        margin-left: -4px !important;
+    }
+    
+    .yt-related-chip-cloud-renderer #right-arrow ytd-button-renderer {
+        margin-left: -3px !important;
+    }
+    
+    #chips yt-chip-cloud-chip-renderer.yt-chip-cloud-renderer {
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        color: var(--primary-color);
+        text-transform: lowercase;
+    }
+    
+    #chips yt-chip-cloud-chip-renderer.yt-chip-cloud-renderer:hover {
+        background: var(--card-bg-2) !important;
+    }
+    
+    #chips yt-chip-cloud-chip-renderer[selected] {
+        background: var(--card-bg-2) !important;
+    }
     
     #secondary ytd-thumbnail.ytd-compact-video-renderer,
     #secondary ytd-thumbnail.ytd-compact-movie-renderer,
@@ -3336,4 +3386,8 @@
     #primary #playlist {
         width: 100% !important;
     }
+    
+    #secondary yt-related-chip-cloud-renderer {
+        width: 380px !important;
+    }   
 }
