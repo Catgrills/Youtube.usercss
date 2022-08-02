@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        1.4
+@version        1.5
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -682,7 +682,7 @@
     #primary ytd-rich-grid-media #dismissible #container yt-formatted-string:not(.complex-string) {
         position: absolute;
         top: 35px;
-        margin-left: 11px !important;
+        margin-left: 10px !important;
     }
     
     #video-preview-container {
