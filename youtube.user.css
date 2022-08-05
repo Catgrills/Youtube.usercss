@@ -197,7 +197,7 @@
     
     #info-bar.ytd-miniplayer {
         /*** MINIPLAYER ***/
-        background: var(--card-bg) !important;
+        background: var(--header-bg) !important;
     }
     
     .miniplayer-title.style-scope.ytd-miniplayer {
