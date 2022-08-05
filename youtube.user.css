@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        1.8
+@version        1.9
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -206,9 +206,14 @@
         font-weight: bold !important;
     }
     
-    #owner-name {
+    #owner-name,
+    .index-message.style-scope.ytd-miniplayer * {
         color: var(--secondary-color) !important;
         font-size: 10pt !important;
+        margin-top: -5px !important;
+    }
+    
+    .index-message.style-scope.ytd-miniplayer {
         margin-top: -5px !important;
     }
     
@@ -3017,7 +3022,8 @@
         width: auto !important;
     }
     
-    #hover-overlays * {
+    #hover-overlays *,
+    ytd-thumbnail[now-playing] ytd-thumbnail-overlay-now-playing-renderer.ytd-thumbnail * {
         font-size: 10pt;
         font-weight: bold !important;
     }
