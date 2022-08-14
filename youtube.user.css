@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        2.1
+@version        2.2
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -1537,6 +1537,10 @@
     
     .ytd-two-column-browse-results-renderer .yt-sort-filter-sub-menu-renderer {
         margin-top: 8px !important;
+    }
+    
+    #content-attachment.ytd-backstage-post-renderer .arrow {
+        background: var(--card-bg-2) !important;
     }
     
     ytd-item-section-renderer #items .ytd-grid-renderer {
