@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        1.10
+@version        1.11
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -759,6 +759,15 @@
         color: var(--secondary-color) !important;
         font-size: 10pt !important;
         font-style: italic !important;
+    }
+    
+    ytd-notification-multi-action-renderer[shelf-dismissal] {
+        padding-left: 5px !important;
+    }
+    
+    ytd-notification-multi-action-renderer[shelf-dismissal] span {
+      color: var(--primary-color) !important;
+      font-size: 11pt !important;
     }
     
     /* EXPLORER */
