@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        1.9
+@version        1.10
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -9,33 +9,33 @@
 	"1. Classic": `
 	:root {
 		--body-bg: #F9F9F9 !important;
-        --card-bg: #F2EFEF !important;
-        --card-bg-op: rgba(242, 239, 239, .98) !important;
-        --card-bg-2: #EAE1E1 !important;
-        --header-bg: #FFF !important;
-        --header-bg-op: rgba(255,255,255,.99) !important;
-        --border-color: #E6D4D4 !important;
-        --primary-color: #000 !important;
-        --secondary-color: #4a4747 !important;
-        --yt-spec-call-to-action: #1C4EC4 !important;
-        --arrow: url("https://i.imgur.com/pzIcLC8.png") !important;
-        --invert: invert(0) !important;
+		--card-bg: #F2EFEF !important;
+		--card-bg-op: rgba(242, 239, 239, .98) !important;
+		--card-bg-2: #EAE1E1 !important;
+		--header-bg: #FFF !important;
+		--header-bg-op: rgba(255,255,255,.99) !important;
+		--border-color: #E6D4D4 !important;
+		--primary-color: #000 !important;
+		--secondary-color: #4a4747 !important;
+		--yt-spec-call-to-action: #1C4EC4 !important;
+		--arrow: url("https://i.imgur.com/pzIcLC8.png") !important;
+		--invert: invert(0) !important;
 	}
 	`,
 	"2. Dark Cyan":`
 	:root {
 		--body-bg: #18191A !important;
-        --card-bg: #212224 !important;
-        --card-bg-op: rgba(33, 34, 36, .98) !important;
-        --card-bg-2: #161617 !important;
-        --header-bg: #121313 !important;
-        --header-bg-op: rgba(18, 19, 19, .99) !important;
-        --border-color: #000 !important;
-        --primary-color: #FFF !important;
-        --secondary-color: #A49696 !important;
-        --yt-spec-call-to-action: #1C4EC4 !important;
-        --arrow: url("https://i.imgur.com/aM19xF2.png") !important;
-        --invert: invert(1) !important;
+		--card-bg: #212224 !important;
+		--card-bg-op: rgba(33, 34, 36, .98) !important;
+		--card-bg-2: #161617 !important;
+		--header-bg: #121313 !important;
+		--header-bg-op: rgba(18, 19, 19, .99) !important;
+		--border-color: #000 !important;
+		--primary-color: #FFF !important;
+		--secondary-color: #A49696 !important;
+		--yt-spec-call-to-action: #1C4EC4 !important;
+		--arrow: url("https://i.imgur.com/aM19xF2.png") !important;
+		--invert: invert(1) !important;
 	}
 	`
 }
@@ -730,6 +730,35 @@
     #video-preview-container ytd-toggle-button-renderer #button.ytd-toggle-button-renderer * {
         color: var(--primary-color);
         font-weight: bold;
+    }
+    
+    #primary #content #dismissible.ytd-rich-grid-slim-media {
+        /*** HOME SHORTS THUMBNAILS ***/
+        background: var(--card-bg) !important;
+        border: 1px solid var(--border-color) !important;
+    }
+    
+    #primary #content #dismissible.ytd-rich-grid-slim-media #thumbnail {
+        border-bottom: 1px solid var(--border-color) !important;
+    }
+    
+    #primary #content #dismissible.ytd-rich-grid-slim-media #details {
+        padding: 0px 10px 10px 10px !important;
+        margin-top: -3px;
+    }
+    
+    #primary #content #dismissible.ytd-rich-grid-slim-media #details #video-title {
+        color: var(--primary-color) !important;
+    }
+    
+    #primary #content #dismissible.ytd-rich-grid-slim-media #details #video-title:hover {
+        color: var(--secondary-color) !important;
+    }
+    
+    #primary #content #dismissible.ytd-rich-grid-slim-media #details #metadata-line * {
+        color: var(--secondary-color) !important;
+        font-size: 10pt !important;
+        font-style: italic !important;
     }
     
     /* EXPLORER */
