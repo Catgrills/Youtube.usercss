@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        2.2
+@version        2.3
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -3373,6 +3373,16 @@
        
     #secondary #dismissed ytd-button-renderer yt-formatted-string.ytd-button-renderer:hover {
         color: #082d85;
+    }
+    
+    ytd-watch-flexy[is-extra-wide-video_=""] #secondary-inner {
+        /*** WATCH SIDEBAR EXTRA WIDE ***/
+        float: none !important;
+    }
+    
+    ytd-watch-flexy[is-extra-wide-video_=""] #playlist,
+    ytd-watch-flexy[is-extra-wide-video_=""] #secondary yt-related-chip-cloud-renderer {
+        width: 300px !important;
     }
     
     /* SETTINGS */
