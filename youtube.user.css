@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        3.1
+@version        3.2
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -2299,7 +2299,13 @@
         font-size: 11pt;
         font-weight: bold;
     }
-    
+	
+    #more.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer, 
+    #all.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer {
+        width: 100%;
+        text-align: center;
+    }
+	
     ytd-search #secondary {
         /*** SEARCH SIDEBAR ***/
         margin-top: 10px !important;
