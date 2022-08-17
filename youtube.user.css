@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        3.2
+@version        3.3
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -2854,10 +2854,6 @@
     ytd-watch-flexy[flexy] #secondary.ytd-watch-flexy {
         /*** WATCH SIDEBAR ***/
         width: 300px !important;
-    }
-    
-    #secondary-inner {
-        float: right !important;
     }
     
     #secondary #items {
