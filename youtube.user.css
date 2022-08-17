@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        2.7
+@version        2.8
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -255,6 +255,7 @@
     #secondary #metadata-line span:nth-of-type(1),
     #secondary ytd-watch-next-secondary-results-renderer #scroll-container,
     #secondary ytd-watch-next-secondary-results-renderer #spinner-container,
+    #primary ytd-comments .more-button yt-icon,
     #primary #top-level-buttons-computed .style-scope.ytd-menu-renderer.force-icon-button.style-text #text,
     #primary #top-level-buttons-computed .yt-simple-endpoint.style-scope.ytd-button-renderer #text,
     #primary.ytd-watch-flexy ytd-continuation-item-renderer a > #button yt-icon.ytd-button-renderer,
@@ -2830,6 +2831,16 @@
     
     ytd-comments #button.ytd-continuation-item-renderer ytd-button-renderer.ytd-continuation-item-renderer {
         margin-left: -8px !important;
+    }
+    
+    ytd-comments .less-button #creator-thumbnail,
+    ytd-comments .more-button #creator-thumbnail {
+        margin-left: -14px !important;
+    }
+    
+    #expander.ytd-comment-replies-renderer #less-replies.ytd-comment-replies-renderer #text,
+    #expander.ytd-comment-replies-renderer #more-replies.ytd-comment-replies-renderer #text {
+        margin-left: 3px !important;  
     }
     
     ytd-watch-flexy[flexy] #secondary.ytd-watch-flexy {
