@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        2.8
+@version        2.9
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -2816,7 +2816,7 @@
     ytd-comments .less-button.style-scope.ytd-comment-replies-renderer,
     ytd-comments .more-button.style-scope.ytd-comment-replies-renderer {
         /*** WATCH MAIN COLUMN COMMENTS SECTION COMMENT LESS/MORE BUTTON ***/
-        margin-left: -4px !important;
+        margin-left: -2px !important;
     }
     
     ytd-comments .less-button.style-scope.ytd-comment-replies-renderer *,
@@ -2835,7 +2835,7 @@
     
     ytd-comments .less-button #creator-thumbnail,
     ytd-comments .more-button #creator-thumbnail {
-        margin-left: -14px !important;
+        margin-left: -18px !important;
     }
     
     #expander.ytd-comment-replies-renderer #less-replies.ytd-comment-replies-renderer #text,
