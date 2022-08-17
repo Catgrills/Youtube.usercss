@@ -2842,7 +2842,7 @@
     
     #expander.ytd-comment-replies-renderer #less-replies.ytd-comment-replies-renderer #text,
     #expander.ytd-comment-replies-renderer #more-replies.ytd-comment-replies-renderer #text {
-        margin-left: 3px !important;  
+        margin-left: 1px !important;  
     }
     
     ytd-watch-flexy[flexy] #secondary.ytd-watch-flexy {
