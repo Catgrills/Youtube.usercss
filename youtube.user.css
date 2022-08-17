@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        2.4
+@version        2.5
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -258,6 +258,7 @@
     #primary #top-level-buttons-computed .style-scope.ytd-menu-renderer.force-icon-button.style-text #text,
     #primary #top-level-buttons-computed .yt-simple-endpoint.style-scope.ytd-button-renderer #text,
     #primary #top-level-buttons-computed ytd-button-renderer:nth-last-of-type(2),
+    #primary.ytd-watch-flexy ytd-continuation-item-renderer a > #button yt-icon.ytd-button-renderer,
     #sections ytd-guide-section-renderer:nth-of-type(3),
     #sections ytd-guide-section-renderer:nth-of-type(4),
     #sections yt-multi-page-menu-section-renderer:nth-of-type(2),
@@ -2378,6 +2379,10 @@
     /* WATCH */
     
     /** DESCRIPTION : change the elements of the watch page **/
+    #columns {
+        overflow-y: hidden;
+    }
+    
     #player.ytd-watch-flexy {
         /*** WATCH MAIN COLUMN VIDEO SECTION ***/
         margin-left: initial !important;
@@ -2804,12 +2809,12 @@
     ytd-comments .less-button.style-scope.ytd-comment-replies-renderer,
     ytd-comments .more-button.style-scope.ytd-comment-replies-renderer {
         /*** WATCH MAIN COLUMN COMMENTS SECTION COMMENT LESS/MORE BUTTON ***/
-        margin-left: -11px !important;
+        margin-left: -4px !important;
     }
     
     ytd-comments .less-button.style-scope.ytd-comment-replies-renderer *,
     ytd-comments .more-button.style-scope.ytd-comment-replies-renderer * {
-        font-weight: normal !important;
+        font-weight: bold !important;
     }
     
     ytd-comments .less-button.style-scope.ytd-comment-replies-renderer:hover,
@@ -2858,20 +2863,26 @@
         border-bottom: 1px solid var(--border-color) !important;
         padding-bottom: 20px !important;
     }
-    
+	
     #primary.ytd-watch-flexy ytd-continuation-item-renderer #button {
+        text-align: center !important;
+    }
+    
+    #primary.ytd-watch-flexy ytd-continuation-item-renderer a > #button {
         background: var(--card-bg) !important;
         border: 1px solid var(--border-color) !important;
         border-radius: 2px !important;
+        text-transform: uppercase !important;
     }
     
-    #primary.ytd-watch-flexy ytd-continuation-item-renderer #button * {
+    #primary.ytd-watch-flexy ytd-continuation-item-renderer a > #button #text {
         border: none !important;
         color: var(--primary-color) !important;
         font-weight: bold !important;
+	margin-left: 0px !important;
     }
     
-    #primary.ytd-watch-flexy ytd-continuation-item-renderer #button:hover {
+    #primary.ytd-watch-flexy ytd-continuation-item-renderer a > #button:hover {
         background: var(--card-bg-2) !important;
     }
     
