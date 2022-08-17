@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        2.6
+@version        2.7
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -257,7 +257,6 @@
     #secondary ytd-watch-next-secondary-results-renderer #spinner-container,
     #primary #top-level-buttons-computed .style-scope.ytd-menu-renderer.force-icon-button.style-text #text,
     #primary #top-level-buttons-computed .yt-simple-endpoint.style-scope.ytd-button-renderer #text,
-    #primary #top-level-buttons-computed ytd-button-renderer:nth-last-of-type(2),
     #primary.ytd-watch-flexy ytd-continuation-item-renderer a > #button yt-icon.ytd-button-renderer,
     #sections ytd-guide-section-renderer:nth-of-type(3),
     #sections ytd-guide-section-renderer:nth-of-type(4),
@@ -2843,7 +2842,7 @@
     }
     
     #secondary #items {
-        margin-top: -25px;
+        margin-top: -25px !important;
     }
     
     #secondary #dismissible {
@@ -2861,7 +2860,8 @@
         background: var(--card-bg-2) !important;
     }
     
-    #secondary .ytd-item-section-renderer {
+    #secondary .ytd-item-section-renderer,
+    #secondary .ytd-watch-next-secondary-results-renderer {
         margin-top: 1px !important;
         margin-bottom: 20px !important;
     }
@@ -2996,11 +2996,11 @@
         font-style: italic !important;
     }
 	
-    #secondary yt-related-chip-cloud-renderer {
+    #secondary #items yt-related-chip-cloud-renderer {
         /*** WATCH SIDEBAR TAGS ***/
         width: 250px !important;
-        margin-top: 20px;
-        margin-bottom: -20px;
+        margin-top: 15px !important;
+        margin-bottom: -20px !important;
     }   
     
     .yt-related-chip-cloud-renderer #left-arrow-button.yt-chip-cloud-renderer, 
