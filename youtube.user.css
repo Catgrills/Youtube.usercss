@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        3.0
+@version        3.1
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -230,6 +230,7 @@
     ytd-mini-guide-renderer.ytd-app,
     ytd-playlist-sidebar-secondary-info-renderer,
     ytd-profile-column-renderer,
+    ytd-rich-grid-media #dismissible #details #avatar-link[title="YouTube Music"],
     ytd-search #dismissible #expandable-metadata,
     ytd-search ytd-movie-renderer,
     .badges.ytd-grid-movie-renderer,
