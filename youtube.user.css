@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        2.9
+@version        3.0
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -255,6 +255,7 @@
     #secondary #metadata-line span:nth-of-type(1),
     #secondary ytd-watch-next-secondary-results-renderer #scroll-container,
     #secondary ytd-watch-next-secondary-results-renderer #spinner-container,
+    #primary ytd-comments .less-button yt-icon,
     #primary ytd-comments .more-button yt-icon,
     #primary #top-level-buttons-computed .style-scope.ytd-menu-renderer.force-icon-button.style-text #text,
     #primary #top-level-buttons-computed .yt-simple-endpoint.style-scope.ytd-button-renderer #text,
