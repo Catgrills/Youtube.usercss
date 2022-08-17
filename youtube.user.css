@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        2.5
+@version        2.6
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -979,11 +979,18 @@
         background: #d63031;
         color: #FFF;
         font-weight: bold;
-        margin: 10px;
     }
     
     ytd-browse #dismissible ytd-toggle-button-renderer.style-compact-gray[is-paper-button] * {
         font-weight: bold;
+    }
+	
+    #grid-container.ytd-expanded-shelf-contents-renderer > .ytd-expanded-shelf-contents-renderer #dismissible ytd-toggle-button-renderer.style-compact-gray[is-paper-button] {
+        margin-top: -5px !important;
+    }
+    
+    ytd-grid-video-renderer #dismissible ytd-toggle-button-renderer.style-compact-gray[is-paper-button] {
+        margin: 10px !important;
     }
     
     /* SHORTS */
