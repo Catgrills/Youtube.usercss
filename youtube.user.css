@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        3.3
+@version        3.4
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -3395,6 +3395,11 @@
         margin-bottom: -30px !important;
     }
     
+    #dismissed.ytd-statement-banner-renderer .ytd-statement-banner-renderer:not(#hide-enclosing-action) {
+        border: none !important;
+    }
+    
+    #dismissed.ytd-statement-banner-renderer .ytd-statement-banner-renderer:not(#hide-enclosing-action) *,
     #secondary #dismissed #text.ytd-notification-multi-action-renderer {
         color: var(--primary-color);
         font-size: 10pt;
