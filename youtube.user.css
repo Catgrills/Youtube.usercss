@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        3.4
+@version        3.5
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -2856,7 +2856,7 @@
         width: 300px !important;
     }
     
-    #secondary #items {
+    #secondary #items.ytd-watch-next-secondary-results-renderer {
         margin-top: -25px !important;
     }
     
@@ -3004,6 +3004,13 @@
     
     #playlist ytd-playlist-panel-video-renderer[selected] {
         background: var(--card-bg-2) !important;
+    }
+	
+    ytd-playlist-panel-video-renderer[watch-color-update][can-reorder]:hover.dragging, 
+    ytd-playlist-panel-video-renderer[watch-color-update][can-reorder].dragging, 
+    ytd-playlist-panel-video-renderer[watch-color-update]:hover:not(.dragging) {
+        background-color: var(--card-bg-2);
+        box-shadow: none !important;
     }
     
     .ytd-message-renderer {
