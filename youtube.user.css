@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        3.5
+@version        3.6
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -1957,6 +1957,10 @@
     yt-search-query-correction {
         /*** SEARCH AUTOCORRECT ***/
         margin-top: 5px;
+    }
+    
+    yt-did-you-mean-renderer {
+        margin-bottom: 25px !important;
     }
     
     yt-search-query-correction, 
