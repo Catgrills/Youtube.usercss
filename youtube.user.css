@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Youtube.usercss
 @namespace      https://github.com/Catgrills/Youtube.usercss
-@version        3.6
+@version        3.7
 @description    A css script for Youtube.com
 @author         Catgrills/Katgrills
 @preprocessor   uso
@@ -15,6 +15,7 @@
 		--header-bg: #FFF !important;
 		--header-bg-op: rgba(255,255,255,.99) !important;
 		--border-color: #E6D4D4 !important;
+        	--border-color-op: rgba(230, 212, 212,.4) !important;
 		--primary-color: #000 !important;
 		--secondary-color: #4a4747 !important;
 		--yt-spec-call-to-action: #1C4EC4 !important;
@@ -31,6 +32,7 @@
 		--header-bg: #121313 !important;
 		--header-bg-op: rgba(18, 19, 19, .99) !important;
 		--border-color: #000 !important;
+		--border-color-op: rgba(0,0,0,.4) !important;
 		--primary-color: #FFF !important;
 		--secondary-color: #A49696 !important;
 		--yt-spec-call-to-action: #1C4EC4 !important;
@@ -733,6 +735,12 @@
     #video-preview-container ytd-toggle-button-renderer #button.ytd-toggle-button-renderer * {
         color: var(--primary-color);
         font-weight: bold;
+    }
+     
+    #primary #content ytd-rich-shelf-renderer,
+    #primary #content #show-more-button.ytd-rich-shelf-renderer {
+        /*** HOME SHORTS CONTAINER ***/
+        border-color: var(--border-color-op) !important;
     }
     
     #primary #content #dismissible.ytd-rich-grid-slim-media {
@@ -1724,6 +1732,11 @@
         font-family: "Montserrat" !important;
         font-size: 18pt !important;
         font-weight: bold !important;
+    }
+    
+    ytd-reel-shelf-renderer.ytd-item-section-renderer {
+        /*** HISTORY MAIN COLUMN SHORTS CONTAINER ***/
+        border-color: var(--border-color);
     }
     
     .main.ytd-comment-history-entry-renderer {
